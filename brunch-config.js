@@ -18,6 +18,12 @@ exports.config = {
     }
   },
   plugins: {
+    sass: {
+      module: true,
+      options: {
+        includePaths: ['app']
+      }
+    },
     inlineCss: {
       html: true,
       passthrough: [/^node_modules/, 'app/global.css']
