@@ -19,9 +19,8 @@ exports.config = {
   },
   plugins: {
     sass: {
-      module: true,
       options: {
-        includePaths: ['app']
+        includePaths: ['app/{,*/}']
       }
     },
     inlineCss: {
